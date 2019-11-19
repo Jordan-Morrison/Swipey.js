@@ -31,7 +31,7 @@ const swipey = {
             swipey.points.x.end = ev.changedTouches[0].clientX;
             swipey.points.y.end = ev.changedTouches[0].clientY;
             
-            swipey.calculateSwipes(ev.target, callback, options);
+            swipey.calculateSwipes(swipeElement, callback, options);
         }, false);
 
         swipeElement.addEventListener('mousedown', function(ev) {
@@ -43,12 +43,12 @@ const swipey = {
             swipey.points.x.end = ev.clientX;
             swipey.points.y.end = ev.clientY;
             
-            swipey.calculateSwipes(ev.target, callback, options);
+            swipey.calculateSwipes(swipeElement, callback, options);
         }, false);
     
     },
 
-    calculateSwipes: function(target, callback, options){
+    calculateSwipes: function(swipeElement, callback, options){
         let xDiff = swipey.points.x.start - swipey.points.x.end;
         let yDiff = swipey.points.y.start - swipey.points.y.end;
 
@@ -58,7 +58,7 @@ const swipey = {
                 callback({
                     swipeLength: Math.sqrt(Math.pow(xDiff, 2) + Math.pow(yDiff, 2)),
                     direction: (yDiff > 0 ? "up" : "down") + "-" + (xDiff > 0 ? "left" : "right"),
-                    target: target
+                    target: swipeElement
                 });
             }
 
@@ -66,7 +66,7 @@ const swipey = {
                 callback({
                     swipeLength: Math.abs(xDiff),
                     direction: xDiff > 0 ? "left" : "right",
-                    target: target
+                    target: swipeElement
                 });
             }
 
@@ -74,7 +74,7 @@ const swipey = {
                 callback({
                     swipeLength: Math.abs(yDiff),
                     direction: yDiff > 0 ? "up" : "down",
-                    target: target
+                    target: swipeElement
                 });
             }
         }
