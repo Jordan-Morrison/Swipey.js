@@ -7,7 +7,8 @@
     "repository": "https://github.com/Jordan-Morrison/Swipey.js",
     "main": "npm-swipey.js",
     "files": [
-        "npm"
+        "npm",
+        "dist"
     ]
   }
   
