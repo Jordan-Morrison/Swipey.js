@@ -5,6 +5,6 @@
     "author": "Jordan-Morrison",
     "license": "MIT",
     "repository": "https://github.com/Jordan-Morrison/Swipey.js",
-    "main": "swipey.js"
+    "main": "./npm/npm-swipey.js"
   }
   
