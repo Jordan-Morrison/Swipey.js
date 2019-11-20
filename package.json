@@ -9,6 +9,11 @@
     "files": [
         "npm",
         "dist"
-    ]
-  }
-  
+    ],
+    "scripts": {
+        "build": "cp swipey.js npm/swipey.min.js && echo 'export default swipey;' >> npm/swipey.min.js && echo $(minify npm/swipey.min.js) > npm/swipey.min.js && echo $(minify swipey.js) > dist/swipey.min.js"
+    },
+    "devDependencies": {
+        "minify": "^4.1.3"
+    }
+}
