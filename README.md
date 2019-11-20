@@ -1,4 +1,7 @@
 # Swipey.js
+[![NPM](https://img.shields.io/npm/v/swipey.js.svg)](https://www.npmjs.com/package/swipey.js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
 A simple and super lightweight (1.29kb) JS library to add swipe gestures to your app.
 
 ## Installation

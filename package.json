@@ -1,6 +1,6 @@
 {
     "name": "swipey.js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple and lightweight JS library to add swipe gestures to your app",
     "author": "Jordan-Morrison",
     "license": "MIT",
