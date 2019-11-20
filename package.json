@@ -5,10 +5,9 @@
     "author": "Jordan-Morrison",
     "license": "MIT",
     "repository": "https://github.com/Jordan-Morrison/Swipey.js",
-    "main": "npm-swipey.js",
+    "main": "swipey.min.js",
     "files": [
-        "npm",
-        "dist"
+        "npm"
     ],
     "scripts": {
         "build": "cp swipey.js npm/swipey.min.js && echo 'export default swipey;' >> npm/swipey.min.js && echo $(minify npm/swipey.min.js) > npm/swipey.min.js && echo $(minify swipey.js) > dist/swipey.min.js"
