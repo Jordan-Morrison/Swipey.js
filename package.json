@@ -1,6 +1,6 @@
 {
     "name": "swipey.js",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A simple and lightweight JS library to add swipe gestures to your app",
     "author": "Jordan-Morrison",
     "license": "MIT",
@@ -8,6 +8,14 @@
     "main": "./npm/swipey.min.js",
     "files": [
         "npm"
+    ],
+    "keywords": [
+        "touch",
+        "gestures",
+        "swipe",
+        "listener",
+        "mobile",
+        "drag"
     ],
     "scripts": {
         "build": "cp swipey.js npm/swipey.min.js && echo 'export default swipey;' >> npm/swipey.min.js && echo $(minify npm/swipey.min.js) > npm/swipey.min.js && echo $(minify swipey.js) > dist/swipey.min.js"
